@@ -44,7 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             'To' => $phone, // Text this number
                             'Body' => $date.' name is '.$name.' Ticket no. is '.$number.' seat no is '.$capacity.' route is '.$route,
                         ));
-//                        echo 'Details sent by sms';
                     }catch (Exception $e) {
                         echo 'Error: ' . $e->getMessage();
                     }
